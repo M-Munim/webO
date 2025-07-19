@@ -1,0 +1,121 @@
+/* In CSS, px, rem, and em are all units of length, but they differ in how they relate to the element's size and the overall layout. px is an absolute unit, while rem and em are relative units. rem is relative to the root element's font size, and em is relative to the current element's font size. 
+Pixels (px): 
+Absolute unit: A pixel represents a single dot on the screen.
+Fixed size: The size of a pixel is fixed and does not change based on other elements or the user's settings.
+Good for: Precise measurements where you need a specific size, like borders, images, or icons.
+Not ideal for: Responsive designs, where elements should adapt to different screen sizes. 
+Root em (rem): 
+Relative unit:
+rem is relative to the font size of the root element (usually the <html> element). 
+Scalable:
+By changing the root element's font size, you can scale the entire layout. 
+Example:
+If the root font size is 16px, then 1rem is equal to 16px, 2rem is equal to 32px, and so on. 
+Good for:
+Creating scalable and responsive designs where elements should adjust proportionally to each other. 
+Em (em): 
+Relative unit: em is relative to the current element's font size. 
+Cascading: The size of an em is determined by the font size of the element's parent. 
+Complex: Can be useful for specific cases but can also lead to unexpected results in nested elements due to compounding effects. 
+Good for: Font sizes within a specific component, line heights, or padding where you want the size to be relative to the element itself. 
+In summary:
+Use px for precise, fixed-size elements. 
+Use rem for scalable and responsive layouts that adjust to the root element's font size. 
+Use em for relative sizing within a component or when you need the size to be based on the element's own font size.  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parentCont {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.child {
+    width: 360px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+
+}
+
+
+.first {
+    background-color: green;
+    height: 100vh;
+}
+
+.second {
+    background-color: red;
+    height: 100vh;
+}
+
+.third {
+    background-color: blue;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+nav{
+    background-color: chartreuse;
+    height: 100px;
+    position: sticky;
+    top: 0px
+}
+
+button {
+    background-color: rgb(9, 9, 117);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.third1{
+background-color: aqua;
+width: 300px;
+height: 300px;
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 10;
+}
+
+.third2{
+background-color: rgb(8, 82, 82);
+width: 300px;
+height: 300px;
+position: absolute;
+top: 15px;
+left: 15px;
+}
