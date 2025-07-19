@@ -1,0 +1,26 @@
+h1 {
+    color: brown;
+    background-color: aqua;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-style: italic;
+    color: blue;
+    letter-spacing: 2px;
+    line-height: 20px;
+    /* text-transform: uppercase; */
+}
+
+.imgToBeStyled {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: #9A06F0;
+    border-radius: 50%;
+    opacity: 0.5;
+}
