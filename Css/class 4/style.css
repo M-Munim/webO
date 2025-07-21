@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.main {
+    /* view height, jitni screen user ko dikh rahi wo*/
+    height: 100vh;
+    /* background-color: antiquewhite;/ */
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .btn button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.main .btn button:hover {
+    background-color: red;
+}
+
+.cards {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 200px 0px 50px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    background-color: pink;
+    width: 300px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.cardImage {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.cardImage img {
+    border-radius: 50%;
+}
+
+.cardContent h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+
+.cardContent p {
+    text-align: center;
+
+}
+
+.cardContent ul {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+
+/*  */
+@media only screen and (max-width: 600px) {
+    .cardContent h1 {
+        font-size: 25px;
+    }
+
+    .cardImage img {
+        width: 200px;
+    }
+}
