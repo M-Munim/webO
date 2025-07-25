@@ -1,0 +1,167 @@
+/* my style file inside styles folder */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Bitcount Single", system-ui;
+}
+
+body {
+    position: relative;
+
+    z-index: 1;
+}
+
+.fa-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    font-size: 40px;
+    background-color: rgb(34, 214, 34);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.logoImg {
+    width: 80px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    background-color: aquamarine;
+}
+
+.logoDiv {
+    width: 30%;
+}
+
+.navLinks {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navLinks ul li {
+    font-size: 20px;
+}
+
+.sectionOne {
+    width: 100%;
+    height: 650px;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.sectionTwo {
+    width: 100%;
+    height: 650px;
+    background-color: rgb(220, 255, 182);
+
+}
+
+.sectionTwoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.subHeadings {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 1px solid black;
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+.formDiv {
+    background-color: burlywood;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form input {
+    padding: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 4px;
+    resize: none;
+}
+
+.messagelabel {
+    margin-bottom: 5px;
+}
+
+
+form button {
+    width: 100px;
+    margin: 0 auto;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(220, 255, 182);
+    padding: 20px;
+}
+
+.footerMap {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .sectionOne {
+        flex-direction: column;
+    }
+}
