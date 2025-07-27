@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="bg-yellow-500 h-screen">
+        <h1 class="text-3xl md:text-5xl md:text-red-500 lg:text-9xl xl:text-green-500 text-center">Tailwind css</h1>
+    </div>
+
+    <h1 class="text-3xl md:text-5xl md:text-red-500 lg:text-9xl xl:text-green-500 text-center mt-10">Tailwind css</h1>
+
+    <button
+        class="bg-blue-500 hover:bg-blue-900 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer  p-10  my-10 w-[200px] lg:w-[600px]  text-white  rounded">
+
+        Click
+        Me</button>
+
+
+    <div class="text-sm md:text-lg lg:text-xl">Responsive Text</div>
+
+
+    <div class="flex justify-center my-10 bg-gray-800 w-1/4 h-96 gap-4 text-red-400 font-bold text-3xl items-center">
+        <div>Logo</div>
+        <div>Menu</div>
+    </div>
+
+
+    <div class="grid grid-cols-4 gap-4">
+        <div class="bg-green-500">Box 1</div>
+        <div class="bg-blue-500">Box 2</div>
+        <div class="bg-yellow-500">Box 3</div>
+    </div>
+
+    <input type="text" class="border border-gray-300 p-2 rounded w-1/2 my-10">
+
+</body>
+
+
+</html>
