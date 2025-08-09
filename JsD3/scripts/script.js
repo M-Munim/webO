@@ -1,99 +1,61 @@
-// let day = 3;
+let myArr = ['munim', 8769879, true, undefined, null, 783489678, "alex", "ali", "shahwez"];
 
-// switch (day) {
-//     case 1:
-//         console.log("Monday");
-//         break;
-//     case 2:
-//         console.log("Tuesday");
-//         break;
-//     case 3:
-//         console.log("Wednesday");
-//         break;
-//     case 4:
-//         console.log("Thursday");
-//         break;
-//     case 5:
-//         console.log("Friday");
-//         break;
-//     case 6:
-//         console.log("Saturday");
-//         break;
-//     case 7:
-//         console.log("Sunday");
-//         break;
-//     default:
-//         console.log("Other day");
-//         break;
-// }
 
-// ====================================================
+let orders = ["mobile", "handfree", "gaming controller"];
+orders.push("laptop");
+orders.unshift("keyboard");
+console.log(orders.indexOf("gaming controller"))
+console.log(orders.includes("handfree"))
+console.log(orders.join("- "))
+console.log(orders.slice(2, 5))
 
-// let age = 28;
+console.log(orders);
+console.log(orders[2]); // gaming controller
+console.log(myArr.length) // 9
+console.log(myArr[myArr.length - 1]) // finding arrs last value 
 
-// if (age > 23) {
-//     console.log("You can drive");
-// } else {
-//     console.log("You can't drive");
-// }
+let days = new Array("mon", "tue", "wed", "thu", "fri", "sat", "sun"); // creating array using new constructor keyword
 
-//  age > 23 ? console.log("You can drive") : console.log("You can't drive");
 
-// ====================================================
 
-//  let userName = "Munim";
-//  let pass = "1234"
+//              0       1       2       3           4           5
+let stds = ["munim", "shahwez", "ali", "sadia", "aatka", "mujahid"];
 
-//  if (userName === "Munim" && pass === "1234") {
-//     console.log("Login Success");
-//  } else {
-//     console.log("Login Failed");
+// console.log(stds.slice(2,6)); //ali, sadia
 
-//  }
-
-// ====================================================
-// function declaration
-
-greet("Munim") // argument ()
-greet("Shahwez")
-greet("sadia")
-greet("aatka")
-function greet(name) {  //parameter (input value)
-    console.log("Hello " + name);
+for (let i = 0; i < stds.length; i++) {
+    console.log("hello " + stds[i]);
 }
 
-// function expression
-
-const hi = function name(naam) {
-    console.log("kesy ho " + naam);
-}
-hi("Munim")
-hi("Shahwez")
-hi("sadia")
-hi("aatka")
-
-
-
-const add = (a, b) => {
-    return console.log(a + b)
-    console.log("hello bhai")
+for (const std of stds) {
+    console.log("hello " + std);
 }
 
-// can be also written as
-// const add = (a, b) => console.log(a + b)
 
-add(10, 20)
-add(30, 40)
+console.log('=====================')
+let n = 10;
 
-// ====================================================
-
-setTimeout(function () {
-    console.log("Hello");
-}, 3000); //3000 ms == 3 seconds
+while (n < 20) {
+    console.log(n);
+    n++
+}
 
 
-// ====================================================
+let users = ["alex", "jhon", "alexa"];
 
-(function abc() {
-    console.log("Hello");
-})()
+for (const user of users) {
+    console.log(user);
+}
+
+
+let cars = ["toyota", "honda", "bmw", "audi"];
+for (const car of cars) {
+    console.log(car);
+}
+
+
+
+let person = { name: "Munim", age: 55 };
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
